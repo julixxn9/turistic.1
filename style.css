@@ -1,0 +1,127 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f7ff;
+    color: #333;
+}
+
+/* Estilos de encabezado */
+header {
+    background-color: #1e90ff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Georgia', serif;
+}
+
+/* Estilos principales */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Estilos de las secciones */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #4169e1;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Estilos de los artículos */
+article {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+article:hover {
+    transform: scale(1.02);
+}
+
+article h3 {
+    font-size: 1.8em;
+    color: #4682b4;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+article p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+article ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+article span {
+    font-weight: bold;
+    color: #ff4500;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* Estilos específicos del artículo */
+article.package {
+    border-left: 5px solid #ff4500;
+}
+
+article.cruise {
+    border-left: 5px solid #4682b4;
+}
+
+/* Mejora de la organización del contenido dentro de los artículos */
+article p span {
+    color: #333;
+}
+
+article p span::after {
+    content: ":";
+    margin-right: 5px;
+    color: #ff4500;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    article {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    article h3 {
+        font-size: 1.5em;
+    }
+
+    section h2 {
+        font-size: 1.6em;
+    }
+}
+
+
